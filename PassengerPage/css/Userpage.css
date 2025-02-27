@@ -1,0 +1,84 @@
+
+.navbar-nav a{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+.navbar-nav a:hover
+{
+    color: rgb(19, 16, 179);
+}
+.container
+{
+    background-color: hsl(0, 16%, 15%);
+}
+.col-lg-1,.col-lg-9,.col-lg-3
+{
+    background-color: rgb(202, 210, 218);
+    -webkit-box-shadow: 0 0 1px rgb(53, 34, 34);
+        box-shadow: 0 0 3px rgb(17, 7, 7);
+        border-radius: 5px;
+}
+
+.container
+{
+
+    position: absolute;
+}
+label
+{
+   color: black;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 10px;
+}
+.form-control
+{
+    /* text-align: center; */
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.card
+{
+    -webkit-box-shadow: 0 0 1px rgb(19, 5, 5);
+    box-shadow: 0 0 3px rgb(14, 12, 12);
+    background-color: whitesmoke;
+ 
+}
+.form-group row col-6
+{
+    height: 120px;;
+}
+.nav-item
+
+{
+
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 17px;
+    text-shadow: 1px 1px 0px rgb(175, 154, 32);
+    color: black;
+}
+#updateprofile
+{
+    -webkit-box-shadow: 0 0 1px rgb(19, 5, 5);
+    box-shadow: 0 0 3px rgb(14, 12, 12);
+    background-color: whitesmoke;  
+}
+input
+{
+    background-color: red;
+}
+#updateprofile
+{
+background-color: red;
+}
+#columns
+{
+   color:red;font-weight:bold; 
+    text-shadow:3px 4px 7px black;
+    font-family:abel;
+    font-size:30px"
+}
+ 
+    

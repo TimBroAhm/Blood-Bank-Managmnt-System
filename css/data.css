@@ -1,0 +1,186 @@
+*{
+margin:0;
+padding:0;
+}
+body{
+height:400px;
+background-color:#008080;
+}
+div#container{
+width:100%;
+margin: -30px auto;
+}
+header table{
+background: url(images/.jpg) no-repeat;
+background-color: #008080;
+min-height: 80px;
+text-align:center;
+color:white;
+font-size:13px;
+}
+ #links{
+  text-align:center;
+  width:100%;
+  font-size:18;
+  opacity:0.9;
+  background-color:#1B5E20;opacity:0.9;
+  font-family:Lucida Calligraphy;
+  006064;
+  008080;
+  }
+#links ul {
+ margin:0;
+ padding:0;
+ list-style:none;
+ position:relative;
+ margin-left:130px;
+}
+#links ul li a{
+ display:block;
+ padding:10px;
+ text-decoration:none;
+ width:150px;
+ color:white;
+transition:0.9s;
+}
+#links ul:after {
+content:"";clear: both;
+display:block;
+	}
+#links ul li {
+margin-right:1px;
+float:left;
+list-style:none;
+opacity:100%;
+	 }
+#links ul ul {
+ display:none;
+	 }
+#links ul li:hover >ul {
+display:block;
+	 }
+#links ul li:hover{
+background-color:black;
+transition:0.5s;
+		}
+#links ul ul{
+ background:#377d7a;
+ padding:0px;
+margin:0;
+position:absolute;top:100%;
+		 }
+#links ul ul li {
+float:none;
+position:relative;
+		  }
+#links ul ul li a{
+padding:10px;
+color:white;
+width:150px;
+text-align:left;
+		   }
+ #links ul ul li a:hover {
+background:#ff00ff; 
+color:black;
+transition:0.9s;
+			}
+#main{
+background:url(images/.png) ;
+background-color:#0066aa;
+min-height:300px;
+overflow:hidden;
+text-align:center;
+}
+#columen1{
+background-color: #009;
+min-height: 350px;
+margin-left:200px;
+margin-right:200px;
+opacity:.9;
+}
+#sidebar1{
+background-color:#008080;
+00E676;
+004D40;
+3399FF;
+1ed2f4;
+#377d7a;
+min-height:600px;
+float: left;
+width:290px;
+}
+#pforT p{
+font-family:Lucida Calligraphy;
+color:white;
+font-size:20px;
+}
+#sidebar2{
+background-color:#008080;
+3399FF;
+#3366CC;
+min-height:600px;
+float:right;
+width:290px;
+text-align:center;
+}
+#hintlink a{
+text-decoration:none;
+color:white;
+font-size:20px;
+font-family:Lucida Calligraphy;
+}
+#pforT Table{
+width:165px;
+height:43;
+margin-left:55px;
+}
+#pforT{
+margin-top:54;
+}
+#selectid select{
+font-size:18px;
+width:150px;
+height:30px;
+font-family:mes New Roman;
+}
+#selectid input{
+width:73px;
+height:30px;
+}
+footer{
+background-color:#377d7a;
+#00abdc;
+#776655;
+min-height:30px;
+text-align:center;
+opacity:.9;
+}
+.footter{
+color:white;
+}
+#wrapper{
+	width:200px;
+	margin: 5px auto;
+	padding: 80px;
+	background: #EFFFE0;
+}
+
+form div{
+	margin: 3px auto;
+}
+.textInput{
+	margin-top: 2px;
+	height: 28px;
+	border:1px solid #5E6E66;
+	font-size: 16px;
+	padding: 1px;
+	width: 90%;
+}
+.btn{
+	padding: 7px;
+	width: 90%;
+}
+.val_error{
+	color:#FF1F1F;
+}
+

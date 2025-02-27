@@ -1,0 +1,62 @@
+.bg-light
+{
+    background-color: hsl(0, 27%, 90%);
+}
+.container {
+    background-color: hsl(0, 27%, 90%) ;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #7b8c96;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    }
+
+  
+  .border-top { border-top: 1px solid #e5e5e5; }
+  .border-bottom { border-bottom: 1px solid #e5e5e5; }
+  .border-top-gray { border-top-color: #adb5bd; }
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+  .lh-condensed { line-height: 1.25; }
+
+  label
+  {
+     color: black;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 10px;
+  }
+  .form-check form-check-inline
+  {
+    color: black;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 10px;
+  }
+  #inputEmail
+  {
+      height: 36px;
+      /* border-color:rgb(24, 20, 20); */
+    }
+    .form-control:focus {
+        border-color: #dfd3df;
+        box-shadow: 0px 1px 1px rgba(197, 192, 192, 0.075) inset, 0px 0px 8px rgba(184, 178, 184, 0.5);
+    }
+    .nav
+    {
+        min-height: 10px;
+    }
+  input[type='email']{
+  border-color: rgba(170, 177, 170, 0.8);
+  box-shadow: 0 1px 1px rgba(216, 211, 211, 0.075) inset, 0 0 8px rgba(81, 83, 80, 0.6);
+  outline: 0 none;}
+  .form-control
+  {
+      /* text-align: center; */
+      font-size: 12px;
+      font-family: 'Times New Roman', Times, serif;
+  }
+
+  

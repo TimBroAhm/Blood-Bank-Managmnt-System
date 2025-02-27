@@ -1,0 +1,109 @@
+*{
+margin:0px;
+padding:0px;
+}
+body{
+font-size:12;
+background:white;
+}
+.header{
+	width:410px;
+	margin:5px auto 0px;
+	color: black;
+	background:#bbb;
+	border: 1px solid black;
+	text-align:center;
+	border-bottom:none;
+	border-radius: 10px 10px 0px 0px;
+	padding: 0px;
+	font-size:14px;
+	font-family:Lucida Calligraphy;
+}
+form{
+	width:370px;
+	height:423px;
+	margin: 0px auto;
+	padding: 20px;
+	border: 1px solid black;
+	background:white;
+	border-radius: 0px 0px 10px 10px;
+	
+}
+.input-group{
+	margin: 10px 0px 10px 0px;
+}
+.input-group label{
+	display:block;
+	text-align:left;
+	margin:3px;
+	font-size:17px;
+	
+}
+.selectrol select{
+width:230px;
+font-family:cambria;
+border-radius:3px;
+
+}
+
+.input-group input{
+	height:30px;
+	width:63%;
+	padding: 5px 10px;
+	font-size:16px;
+	border-radius:5px;
+	border: 1px solid gray;
+	font-family:cambria;
+} 
+.input-group a input{
+	height:46px;
+	width:24%;
+	padding: 5px;
+	font-size:16px;
+	border-radius:5px;
+	border: 1px solid gray;
+	font-family:cambria;
+	background:#5F9EA0;
+    color:white;
+	margin-left:30px;
+}
+.btn{
+	width:115;
+	padding:8px;
+	font-size:18px;
+	color:white;
+	background:#5F9EA0;
+	border:none;
+	border-radius:5px;
+	font-family:cambria;
+	margin-left:20px;
+}
+.btn:hover{
+	background:#000000;
+	font-family:cambria;
+	transition:0.9s;
+	font-size:16px;
+	cursor:pointer;
+	opacity:0.9;
+	color:white;
+}
+#repass_error{
+	color:red;
+	font-size:18px;
+}
+#pass_error{
+	color:red;
+	font-size:18px;
+}
+#userId_error{
+	color:red;
+	font-size:18px;
+}
+#email_error{
+	color:red;
+	font-size:18px;
+}
+#uname_error{
+	color:red;
+	font-size:18px;
+}

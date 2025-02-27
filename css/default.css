@@ -1,0 +1,42 @@
+body {
+	background:;
+	color: #fffff;
+	font: normal 62.5% "Lucida Sans Unicode",sans-serif;
+	margin: 0;
+}
+h2 {
+	font: bold 1em Verdana,serif;
+	margin: 3px 0 1px;
+}
+ul{
+margin:0px;
+padding:0px;
+}
+ul li a{
+text-decoration:none;
+color:white;
+display:block;
+}
+ul li{
+
+float:left;
+width:220px;
+height:50px;
+background-color:black;
+font-size:20px;
+line-height:50px;
+text-align:center;
+position: relative;
+background:linear-gradient(darkred 20%,black 80%);
+}
+ul li a:hover{
+background-color:orange;
+}
+
+
+
+ 
+
+
+
+ 

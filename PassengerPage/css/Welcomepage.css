@@ -1,0 +1,35 @@
+
+body
+{
+  background-color: rgb(233, 217, 217);
+}
+nav
+{
+  background-color: rgb(166, 190, 211);
+  -webkit-box-shadow: 0 0 1px rgb(53, 34, 34);
+  box-shadow: 0 0 3px rgb(92, 75, 75);
+}
+.form-group row
+{
+  margin: auto;
+}
+#webdevpagehead
+{
+   color:rgb(255, 0, 0);
+   font-weight:bold;
+   text-shadow:1px 1px 0px black;
+   font-family:abel;
+   margin-top:10px;
+   font-size:18px;
+   
+}
+nav
+{
+  background-color: aliceblue;
+}
+nav a{
+  text-align: center;
+}
+
+
+
