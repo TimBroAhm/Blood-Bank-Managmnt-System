@@ -1,0 +1,211 @@
+<?php
+session_start();
+include("connection.php");
+		?>
+<html>
+
+<head>
+<title>login</title>
+<link  href="mystyles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body bgcolor="#B0C4DE">
+
+<center>
+<div id="divWrapper">
+<table border=0 ><tr><td colspan="6">
+<div id="divheader">
+<?php include("header.php");
+?>
+</div>
+<div id="divNav">
+<?php
+include("menu.php");
+?>
+<?php
+require("date_time.php");
+?>
+</div></td>
+</tr>
+<tr><tr><td>&nbsp;</td></tr>
+<td><div id="divSideContentLeft">
+<?php
+include("homemenu.php");
+?>  
+</div> </td>
+<td>&nbsp;</td><td>
+<div id="divContentCenter">
+<fieldset style="height:300px;">
+				<legend align="center"><h1 style="color: blue;"><u> Login form </u></h1> </legend>
+	<form action="" method="post">
+	<img src="image/login.jpg" width="60px" height="60px"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+User Name:<input type="text" name="username" required="" placeholder="UserName" style='width: 25%;
+					height:10%; border-radius:4px;font-size:15px;box-sizing: border-box; 
+					border: 1px solid #060907; box-sizing: border-box; padding: 0px;'/><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Password:<input type="password" name="password1" required="" placeholder="*****************" style='width: 25%;
+					height:10%; border-radius:4px;font-size:15px;box-sizing: border-box; 
+					border: 1px solid #060907; box-sizing: border-box; padding: 0px;'/>
+<br<br><br><br<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br<br>
+<input type="submit" name="login" value="login"  style='width: 15%;
+					height:10%; border-radius:4px;font-size:15px;box-sizing: border-box; 
+					border: 1px solid #060907; box-sizing: border-box; padding: 0px;'/>&nbsp;
+<input type="reset" name="reset" value="reset"style='width: 15%;
+					height:10%; border-radius:4px;font-size:15px;box-sizing: border-box; 
+					border: 1px solid #060907; box-sizing: border-box; padding: 0px;'/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="forgotpassword.php">Forgot password?  </a> 
+
+</form>
+		<?php
+		function encryptpassword($password ) 
+{
+$cryptKey='qJB0rGtIn5UB1xG03$oldpefyCp';
+$passwordEncoded= base64_encode( mcrypt_encrypt( MCRYPT_RIJNDAEL_256, md5( $cryptKey ), $password, MCRYPT_MODE_CBC, md5( md5( $cryptKey ) ) ) );
+return( $passwordEncoded );
+}
+	//echo $_POST["login"];
+	
+if(isset($_POST["login"]))
+{   
+
+	$username=$_POST["username"];
+	//$passd=sha1($_POST["pass"]);
+	//$pass=($_POST["password"]);
+	$pass=$_POST["password1"];
+	$pass=md5($pass);
+	//$pass=sha1($pass);40bd001563085fc35165329ea
+		//$cryptKey  = 'qJB0rGtIn5UB1xG03efyCp';
+  //$upass=base64_encode( mcrypt_encrypt( MCRYPT_RIJNDAEL_256, md5( $cryptKey ), $pass, MCRYPT_MODE_CBC, md5( md5( $cryptKey ) ) ) );
+if($con)
+{ 
+
+//account
+ $sql="select * from account where username='$username' and password='$pass'";
+ $matchfound=mysqli_query($con,$sql);
+ $row=mysqli_fetch_assoc($matchfound);
+ $id=$row["Employee_id"];
+ echo $id;
+		if($id!=null)
+		{	
+		 
+		$id=$row["Employee_id"];
+		//$pid=$row["postion_id"];
+		$username=$row["username"];
+		$pw=$row["password"];
+		$status=$row["status"];
+		$role=$row["role"];
+		
+	 $sql1="select * from employee where Employee_id='$id'";
+			 $matchfound=mysqli_query($con,$sql1);
+			 if($row=mysqli_fetch_assoc($matchfound))
+			 $empoffid=$row['Dept_Office_collage_Id'];
+			 
+ $sql2="select * from office where office_id='$empoffid'";
+      $matchfound1=mysqli_query($con,$sql2);
+         if($row=mysqli_fetch_assoc($matchfound1))
+      $empoffname=$row['office_name'];
+      	
+       else {   	
+      $sql2="select * from collage where collage_id='$empoffid'";
+      $matchfound1=mysqli_query($con,$sql2);
+      if($row=mysqli_fetch_assoc($matchfound1))
+      $empoffname=$row['collage_name'];
+			
+     else { 	
+      $sql2="select * from department where Did='$empoffid'";
+      $matchfound1=mysqli_query($con,$sql2);
+      if($row=mysqli_fetch_assoc($matchfound1))
+      $empoffname=$row['Dept_Name'];
+			}}
+			echo $empoffname;
+			 $sql1="select * from postion where Employee_id='$id' and postion_status='Active'";
+ $matchfound=mysqli_query($con,$sql1);
+  if($row=mysqli_fetch_assoc($matchfound))
+ $emppostionoffid=$row['Dept_Office_collage_Id'];
+		 
+ $sql2="select * from office where office_id='$emppostionoffid'";
+      $matchfound1=mysqli_query($con,$sql2);
+        if($row=mysqli_fetch_assoc($matchfound1))
+      $emppostionoffname=$row['office_name'];	
+       else {
+	   	
+      $sql2="select * from collage where collage_id='$emppostionoffid'";
+      $matchfound1=mysqli_query($con,$sql2);
+      if($row=mysqli_fetch_assoc($matchfound1))
+      $emppostionoffname=$row['collage_name'];
+			
+     else {
+	 	
+      $sql2="select * from department where Did='$emppostionoffid'";
+      $matchfound1=mysqli_query($con,$sql2);
+      if($row=mysqli_fetch_assoc($matchfound1))
+      $emppostionoffname=$row['Dept_Name'];
+			}}
+		 $_SESSION['$emppostionoffid']=$emppostionoffid;
+		 $_SESSION['$emppostionoffname']=$emppostionoffname;
+		 $_SESSION['$empoffid']=$empoffid;
+	     $_SESSION['$empoffname']=$empoffname;
+		$_SESSION['sun']=$username;
+		$_SESSION['spw']=$pw;
+		$_SESSION['role']=$role;
+		$_SESSION['Employee_id']=$id;
+		
+			if($role=="Admin" &&  $status=="Active")
+			  header("location:admin.php");
+			else if($role=="employee" &&  $status=="Active")
+			  header("location:employee.php");
+			  
+			
+			  
+					else if($role=="departmenthead" &&  $status=="Active")
+			  header("location:depthead.php");
+			  
+			   else if($role=="collge dean" &&  $status=="Active")
+			  header("location:collgedean.php");
+			  
+			else if($role=="stockclerk" &&  $status=="Active")
+			   header("location:stockclerk.php");
+			   
+			else if($role=="presidant" &&  $status=="Active")
+				header("location:presidant.php");
+				
+			else if($role=="Directorate" &&  $status=="Active")
+				header("location:Director.php");
+				
+			else if($role=="Procurment" &&  $status=="Active")
+				header("location:procurment.php");
+				
+				//else if($role=="Department" &&  $status=="Active")
+				// header("location:departmenthead.php");
+				
+			else if($role=="propertyDirectorate" &&  $status=="Active")
+				header("location:propertyAdminDirectorate.php");
+						
+			else if($role=="vicepresidant" &&  $status=="Active")
+				header("location:vicepresidant.php");
+			else
+				
+			   echo "<h5>invalid username or password<h5>".mysqli_error($con);	
+     }
+     else
+    echo "<h1>Invalid username/password<h1>".mysqli_error($con);
+  }else{
+  	
+  
+echo"connection failed".mysqli_error($con);
+}
+}
+?>
+
+</fieldset></div></td>
+<tr><td colspan=6>
+<div id="divFooter"><br>
+<?php include("footer.php");?>
+</div></td></tr>
+</table>
+</div>
+</center>
+
+</body>
+</html>

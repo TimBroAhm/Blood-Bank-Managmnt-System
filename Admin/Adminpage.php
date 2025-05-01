@@ -6,7 +6,7 @@ if(isset($_SESSION['USER_ID']))
 	 $now=time();
 	if($now>$_SESSION['expire']){
 		error_reporting(1);
-       session_destroy();
+      // session_destroy();    ahmed comment after finished un coment
      echo"<p > session expire</p><a href='../Login.php'>login</a>";
 }
 	else{
@@ -73,9 +73,7 @@ href="../css/adminstyle.css">
 	<ul>
 	<li><a href="employeeregistration.php"target="myframe"><?php echo htmlspecialchars($lang['employee']);?></a></li>
 	</ul>
-	<ul>
-	<li><a href="imageupload.php"target="myframe"><?php echo htmlspecialchars($lang['notice']);?></a></li>
-	</ul>
+	
 	<ul>
 	<li><a href="ViewUser.php"target="myframe"><?php echo htmlspecialchars($lang['user']);?></a></li>
 	</ul>
@@ -88,6 +86,19 @@ href="../css/adminstyle.css">
 	
 	<li><a href="backup.php"target="myframe"><?php echo htmlspecialchars($lang['bb']);?></a>
 	</li>
+	</ul>
+	
+	
+	<ul>
+	
+	<li><a href="Reportbbm.php" target="myframe">Retrive Report</a>
+		
+		<ul>
+	
+	<li><a href="ViewUsersActivity.php" target="myframe">View_User_Activity</a></li>
+	</ul>
+	<ul>
+	<li><a href="imageupload.php"target="myframe"><?php echo htmlspecialchars($lang['notice']);?></a></li>
 	</ul>
 </div>
 </br></br></br>

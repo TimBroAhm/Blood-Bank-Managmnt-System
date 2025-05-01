@@ -83,11 +83,12 @@ if(isset($_SESSION['USER_ID']))
 			<select type="text" name="role" class="textInput"id="rol" >
 		<option>-Select Role-</option>
 		<option>System Admin</option>
-		<option>Director General</option>
-		<option>Deputy Director General</option>
-		<option>General Service Excutive Offic</option>
+		<option>BBmanager</option>
+		<option>Donor</option>
+		<option>Seeker</option>
+		<option>Nurse</option>
+		<option>Labtecn</option>
 		<option>Employee</option>
-		<option>Stockclerk</option>
 		</select><span><i id="role_error"></i></span>
 		</div>
 		<div>

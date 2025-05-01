@@ -3,6 +3,93 @@
 global $lang;
 
 
+$lang['docc'] = 'ሰነዶች';
+$lang['dan'] = 'አውረድ';
+$lang['gal'] = 'ማዕከለ-ስዕላት ';
+
+$lang['lab'] = 'የላብራቶሪ ቴክኒሻን';
+$lang['nurse'] = 'ነርስ';
+$lang['bbm'] = 'የደም ባንክ አስተዳዳሪ';
+
+
+$lang['sek'] = 'ደም ፈላጊ ';
+$lang['dor'] = 'ደም ለጋሽ';
+$lang['off'] = 'መኮንን';
+
+$lang['bdt'] = 'የደም ለጋሾች ተግባራት';
+$lang['vap'] = 'ቀጠሮ ይመልከቱ';
+$lang['make'] = 'ቀጠሮ ይያዙ ';
+$lang['vbt'] = 'የደም ዓይነትን ይመልከቱ';
+
+
+
+
+
+$lang['bdttt'] = 'የደም ባንክ አስተዳዳሪ ተግባራት';
+$lang['rs'] = 'ፈላጊ ይመዝገቡ';
+$lang['rr'] = 'ጥያቄ ተቀበል';
+
+
+$lang['vr'] = 'ይመልከቱ ሪፖርት ';
+$lang['vb'] = 'ደም ይመልከቱ';
+$lang['vd'] = 'ለጋሽ ይመልከቱ';
+
+
+$lang['vs'] = 'ፈላጊን ይመልከቱ ';
+$lang['sn'] = 'ማሳወቂያዎችን ላክ';
+$lang['vc'] = 'አስተያየት ይመልከቱ';
+
+
+
+
+
+
+
+$lang['ros'] = 'የነርሶች ተግባራት';
+$lang['rrod'] = 'ለጋሽ ይመዝገቡ';
+$lang['rrrd'] = 'ልገሳ ይመዝገቡ';
+
+
+$lang['rra'] = 'ቀጠሮ ተቀበል ';
+
+
+
+$lang['uud'] = 'ለጋሹን አዘምን ';
+$lang['ssq'] = 'ጠያቂ አዘጋጅ';
+
+
+
+
+
+
+
+
+
+$lang['bst'] = 'ደም ፈላጊ ተግባራት';
+
+$lang['ah'] = ' ምላሽ ይመልከቱ ';
+
+
+$lang['ahh'] = 'ጥያቄ ላክ  ';
+
+
+
+
+
+$lang['pott'] = 'የላብራቶሪ ቴክኒሻን ተግባራት ';
+$lang['rbb'] = 'ደም ይመዝገቡ';
+$lang['vabb'] = 'የሚገኝ ደም ይመልከቱ';
+
+
+$lang['vebb'] = 'ጊዜው ያለፈበት ደም ይመልከቱ';
+$lang['dbb'] = 'ደም ማሰራጨት';
+
+
+
+
+
+$lang['vp'] = 'መገለጫ ይመልከቱ';
+$lang['gcc'] = 'አስተያየት ስጡ';
 
 $lang['office'] = 'ቢሮ ';
 	$lang['ICT'] = 'አይሲቲ ቢሮ';
@@ -22,7 +109,7 @@ $lang['office'] = 'ቢሮ ';
 		$lang['stock'] = ' 	የአክሲዮን ጸሐፊ ተግባራት   ';
 		$lang['emp'] = 'የሰራተኛ ተግባራት   ';
 		$lang['responsee'] = ' 	 የዕቃዎች ጥያቄ ';
-			$lang['responseed'] = ' 	 <img src="images/tana.jpg" width="290" height="220px"/> ';
+			$lang['responseed'] = ' 	 <img src="images/ahb.png" width="290" height="220px"/> ';
 		
 			$lang['postt'] = ' 	 ጨረታዎችን ይለጥፉ ';
 		$lang['reqq'] = ' 	 ጥያቄዎችን ይመልከቱ';

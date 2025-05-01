@@ -21,7 +21,7 @@ if (isset($_POST['create'])) {
 	else//if doesnot predefind account
 	{
 		
-		 if($roll == 'sysadmin' ||$roll == 'Passenger'||$roll == 'Employee'|| $roll == 'Deputy Director General' || $roll== 'General Service Excutive Offic' || $roll =='Stockclerk')
+		 if($roll == 'sysadmin' ||$roll == 'Nurse'||$roll == 'Employee'|| $roll == 'BBmanager' || $roll== 'Donor' || $roll =='Seeker' || $roll =='Labtecn')
 		{
 			$sql1="select EID from Employee1 where EID='$userid'";
 			$result1=mysqli_query($con,$sql1);
@@ -85,11 +85,14 @@ href="../css/f.css">
 <select name="rol" style="font-size: 12pt" id="form_role">
         <option>please choose</option>
 		<option>System Admin</option>
-		<option>Director General</option>
-		<option>Deputy Director General</option>
-		<option>General Service Excutive Officer</option>
+		
+		<option>BBmanager</option>
+		<option>Donor</option>
+		<option>Seeker</option>
+		<option>Nurse</option>
+		<option>Labtecn</option>
 		<option>Employee</option>
-		<option>Stockclerk</option>
+	
 	</select><span  id="role_error_message"></span>
 </div>
 <div class="input-group">

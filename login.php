@@ -72,26 +72,28 @@ if (isset($_POST['login'])) {
                   
 					 echo "<script>window.location='Admin/Adminpage.php';</script>";
                     } 
+					
 					else if
-					($row['ROLE'] == 'Stockclerk') {
-                     header("Location:StockclerkPage/StockClerkManpage.php");
+					($row['ROLE'] == 'BBmanager') {
+                     header("Location:BBmanagerPage/BBmanagerPage.php");
                     } 
-					else if ($row['ROLE'] == 'General Service Excutive Offic') {
-                        header("Location:GeneralServiceExcutiveOfficerManPage/GeneralServiceExcutiveOfficerManPage.php");
+					else if ($row['ROLE'] == 'Donor') {
+                        header("Location:DonorPage/DonorPage.php");
                     }
 					else if ($row['ROLE'] == 'Employee') {
                         header("Location:Employee/Employeepage.php");
                     }
-					else if ($row['ROLE'] == 'Director General') {
-                        header("Location:DirectorGeneralManagerPage/DirectorGeneralManPage.php");
+					else if ($row['ROLE'] == 'Seeker') {
+                        header("Location:SeekerPage/SeekerPage.php");
                     }
-					else if ($row['ROLE'] == 'Deputy Director General') {
-                        header("Location:DeputyDirectorGeneral/DeputyDirectorGeneralPage.php");
-                    }
-					else if ($row['ROLE'] == 'Passenger') {
-                        header("Location:PassengerPage/Userpage.php");
+					else if ($row['ROLE'] == 'Labtecn') {
+                        header("Location:Labtecpage/Labtecpage.php");
                     }
 					
+					
+					else if ($row['ROLE'] == 'Nurse') {
+                        header("Location:Nursepage/Nursepage.php");
+                    }
                 }
             }
                     else {

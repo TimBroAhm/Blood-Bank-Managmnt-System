@@ -20,9 +20,9 @@ href="css/sttyle.css">
 <body >
 <div id="container">
 <header><table border="4px" color="white"><tr><td>
-<img src="images/logoo.jpg" height="70px"width="190px"/>
-</td></br><td><img src="images/home.png" width="870" height="70px"/></td>
-<td><img src="images/logoo.jpg" height="70px" width="240px"/></td></tr></table>
+<img src="images/blod.jpeg" height="70px"width="190px"/>
+</td></br><td><img src="images/LOG.GIF" width="870" height="70px"/></td>
+<td><img src="images/bann.jpeg" height="70px" width="240px"/></td></tr></table>
 </header>
 	<?php include'links.php';
 	?>
@@ -82,19 +82,29 @@ color:black;
 </style>
 </head>
 	<div id="assocation" style="background-image: url('images/29.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; height: 200px;">
+	
+ <ul>
+	    <li><a href="Announcement.php" target="myframe"><?php echo htmlspecialchars($lang['docc']);?></a></li>
+	 </ul>
+	 
+	 <ul>
+	    <li><a href="Download.php" target="myframe"><?php echo htmlspecialchars($lang['dan']);?></a></li>
+	 </ul>
+	 
+	  <ul>
+	    <li><a href="Gallery.php" target="myframe"><?php echo htmlspecialchars($lang['gal']);?></a></li>
+	 </ul>
+	 
 	 <ul>
 	    <li><a href="uploadddd.php" target="myframe"><?php echo htmlspecialchars($lang['noti']);?></a></li>
 	 </ul>
-	 <ul>
-	    <li><a href="viewbid.php" target="myframe"><?php echo htmlspecialchars($lang['bids']);?></a></li>
-	 </ul>
+	
 	 <ul>
 	    <li><a href="feadBack.php" target="myframe"><?php echo htmlspecialchars($lang['feedd']);?></a></li>
 	 </ul>
 </div>
+
 <?php echo $lang['responseed']; ?>
-
-
 
 	</div>
 	<div id="sidebar2">

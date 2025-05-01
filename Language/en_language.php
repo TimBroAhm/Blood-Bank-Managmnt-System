@@ -1,6 +1,123 @@
 
 <?php
 global $lang;
+$lang['docc'] = 'Documents';
+$lang['dan'] = 'Downlods';
+$lang['gal'] = 'Gallery ';
+
+$lang['lab'] = 'Lab Technicial';
+$lang['nurse'] = 'Nurse';
+$lang['bbm'] = 'Blood Bank Manager ';
+
+
+$lang['sek'] = 'Blood Seker ';
+$lang['dor'] = 'Blood Donor';
+$lang['off'] = 'Officer';
+
+
+
+
+
+
+$lang['bst'] = 'Blood Seeker Tasks';
+
+$lang['ah'] = ' View Response ';
+
+
+$lang['ahh'] = 'Send Request  ';
+
+
+
+
+
+
+
+
+
+
+
+
+
+$lang['bdt'] = 'Blood Donor Tasks';
+$lang['vap'] = 'View APPointment';
+$lang['make'] = 'Make Appoitment ';
+
+
+$lang['vp'] = 'View Profile ';
+$lang['gcc'] = 'Give Comment';
+$lang['vbt'] = 'View Boold Type';
+
+
+
+
+
+
+
+
+$lang['bdttt'] = 'BB Manager Tasks';
+$lang['rs'] = 'Register Seeker';
+$lang['rr'] = 'Receive Request';
+
+
+$lang['vr'] = 'View Report ';
+$lang['vb'] = 'View Blood';
+$lang['vd'] = 'View Donor';
+
+
+$lang['vs'] = 'View Seeker ';
+$lang['sn'] = 'Send Notices';
+$lang['vc'] = 'View Comment';
+
+
+
+
+$lang['ros'] = 'Nurse Tasks';
+$lang['vc'] = 'Register Donor';
+$lang['rr'] = 'Register Donation';
+
+
+$lang['vr'] = 'Recieve Appoitment ';
+$lang['vb'] = 'View Blood';
+$lang['vd'] = 'View Donor';
+
+
+$lang['vs'] = 'Update Donor ';
+$lang['sn'] = 'Set Questionary ';
+
+
+
+
+
+$lang['rs'] = 'Nurse Tasks';
+$lang['rrod'] = 'Register Donor';
+$lang['rrrd'] = 'Register Donation';
+
+
+$lang['rra'] = 'Receive Appointment ';
+
+
+
+$lang['uud'] = 'Update Donor ';
+$lang['ssq'] = 'Set Questionary ';
+
+
+
+
+
+
+
+
+
+$lang['pott'] = 'Lab Technicial Tasks ';
+$lang['rbb'] = 'Register Blood';
+$lang['vabb'] = 'View Available Blood';
+
+
+$lang['vebb'] = 'View Expired Blood';
+$lang['dbb'] = 'Distribute Blood';
+
+
+
 
 $lang['office'] = 'office';
 	$lang['ICT'] = ' ICT Director ';
@@ -20,7 +137,7 @@ $lang['office'] = 'office';
 		$lang['stock'] = ' 	StockClerk Tasks   ';
 		$lang['emp'] = ' 	Employee Tasks   ';
 		$lang['responsee'] = ' 	 Items ';
-		$lang['responseed'] = ' 	 <img src="images/inva.png" width="290" height="220px"/> ';
+		$lang['responseed'] = ' 	 <img src="images/bloood.png" width="290" height="220px"/> ';
 		$lang['bb'] = ' 		Backup';
 		
 		

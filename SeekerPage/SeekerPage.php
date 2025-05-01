@@ -1,3 +1,4 @@
+
 <?php
 include("../connection/connection.php");  
  session_start();
@@ -14,6 +15,7 @@ if(isset($_SESSION['USER_ID']))
  <?php
  }
  ?>
+
 <html>
 <head>
 <meta charset="utf-8">
@@ -24,45 +26,62 @@ href="../css/adminstyle.css">
 </head>
 <body>
 <div id="container">
-<header><table border="2px" color="white"><tr><td><img src="../images/logoo.jpg" height="70px"width="150px"/>
-</td><br><td><img src="../images/gsg.png" width="990" height="80px"/></td>
-<td><img src="../images/logoo.jpg" height="80px" width="150px"/>
-	</b></p></td></tr></table></header>
+<header><table border="2px" color="white"><tr><td><img src="../images/b.jpeg" height="70px"width="130px"/>
+</td><br><td><img src="../images/.png" width="1010" height="80px"/></td>
+<td><img src="../images/blood.jpeg" height="80px" width="130px"/>	
+</td></tr></table></header>
+
 	<?php 
 	include '../logoutlink.php';
+	
 	?>
 	</div>
 	<div id="main">
 	<div id="sidebar1">
 	<div id="admin">
-<ul><li><a><?php echo htmlspecialchars($lang['deputyy']);?></a></li></ul>
-	<ul>
-	<li><a href="approverequest.php"target="myframe">approve request</a></li>
+<ul><li><a><?php echo htmlspecialchars($lang['bst']);?></a></li></ul>
+   
+	 <ul>
+	<li><a href="ViewAvailableBlood.php"target="myframe"><?php echo htmlspecialchars($lang['vb']);?></a></li>
 	</ul>
-	<ul>
-	<li><a href="viewrequest.php"target="myframe">View request</a></li>
+							
+	 <ul>
+	<li><a href="Response.php" target="myframe"><?php echo htmlspecialchars($lang['ah']);?> </font></a> </li>
 	</ul>
-	<ul>
-	<li><a href="viewitem.php"target="myframe">View  Item</a></li>
+	
+	 
+
+ <ul>
+	<li><a href="Requestform.php" target="myframe"><?php echo htmlspecialchars($lang['ahh']);?></a> </li>
 	</ul>
-	<ul>
+	
+	 <ul>
+	<li><a href="Commentss.php" target="myframe"><?php echo htmlspecialchars($lang['vc']);?></a> </li>
+	</ul>
+	 
+	 <ul>
+	<li><a href="Viewseekerprofile.php" target="myframe"><?php echo htmlspecialchars($lang['vp']);?></a> </li>
+	</ul>
+<ul>
 	<li><a href="../updateindividualuser.php"target="myframe"><?php echo htmlspecialchars($lang['update']);?> </a></li>
 	</ul>
+	
+	
 </div>
 <?php 
 
 ?>
-	</br></br></br>
-	</br></br></br></br></br></br></br></br></br></br></br>
+	</br></br></br></br></br>
 	<?php
 	include '../imagelink.php';
 	?>
 	</div>
 	<div id="sidebar2">
+	
 		<?php 
 	include '../timecalendar.php';
 		?>
-     
+		
 	</div>
 	<div id="column1"> 
     <?php

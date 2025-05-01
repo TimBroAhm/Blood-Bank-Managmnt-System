@@ -8,19 +8,23 @@ color:black;
 }
 </style>
 </head>
-<center><img src="images/lap.JPEG"width ="780px"height="210px"/></center>
+<center><img src="images/lap.JPEG"width ="480px"height="180px"/></center>
 <body bgcolor="#fffccc";>
-<h3><center><font color="green">Inventory Managment System</font></center></h3>
-<div class="about">
-<p>An Inventory Management System (IMS) is a software solution designed to efficiently track, manage, and control a company's inventory levels, orders, sales, and deliveries. It helps businesses streamline their operations by providing real-time visibility into stock levels, minimizing the risk of overstocking or stockouts. An IMS enhances accuracy by automating manual processes, reducing human errors, and improving overall efficiency. It can also generate reports and insights that aid in demand forecasting, supplier management, and cost optimization. Modern inventory management systems often integrate with other business systems, such as accounting and sales platforms, to ensure seamless operations across departments. Ultimately, an effective IMS helps businesses improve customer satisfaction, reduce operational costs, and maintain a competitive edge in the market.
+<h3><center><font color="green">Blood Bank Managment System</font></center></h3>
+<div id="contentcenter">
+			<br>
+<h2 style="font-size: 25px;color: #147d98;">Mission and Vision</h2>
+<h3>Mission Statement</h3><p>
+National Blood Bank of Ethiopia  mission is to serve our community by meeting the needs of patients, hospitals, and members for safe, high quality blood products and related services.
+<h3>Vision Statement</h3>
+Blood Bank of Ethiopia is committed to accomplishing its mission and meeting the challenges of the future by:
+<ol type="1"><li>Anticipating and responding to customer needs.</li>
+<li>Seeking opportunities for continuous improvement.</li>
+<li>Building trust between the organization, its membership, and the community.</li>
+<li>Providing education which enhances the understanding of transfusion medicine and the need for blood.</li>
+<li>Enhancing the quality, efficiency, and effectiveness of the organization through teamwork.</li>
+<li>Providing a work environment where individuals are valued and their contributions are recognized.</li></ol></p>
 
-
-
-
-
-
-
- </p>
-</div>
+		</div>
 </body>
 </html>
